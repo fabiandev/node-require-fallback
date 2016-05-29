@@ -1,0 +1,26 @@
+{
+  "name": "node-require-fallback",
+  "version": "0.0.1",
+  "description": "Require another package in Node.js if your first choice doesn't exist.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabianweb/node-require-fallback.git"
+  },
+  "main": "index.js",
+  "keywords": [
+    "node",
+    "require",
+    "fallback"
+  ],
+  "author": "Fabian Pirklbauer",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {},
+  "bugs": {
+    "url": "https://github.com/fabianweb/node-require-fallback/issues"
+  },
+  "homepage": "https://github.com/fabianweb/node-require-fallback#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
