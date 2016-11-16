@@ -19,5 +19,5 @@ var requireIfExists = require('node-require-fallback');
 var myModule = requireIfExists('module1', 'module2');
 ```
 
-`myModule` will now hold `module1` if it existed, `module2` otherwise.  
-`myModule` may be `null`, if `module2` wasn't available.
+`myModule` will now hold `module1` if it exists or `module2` otherwise.  
+`myModule` will be `null`, if `module2` wasn't available as well.
