@@ -1,6 +1,6 @@
 {
   "name": "node-require-fallback",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Require another package in Node.js if your first choice doesn't exist.",
   "repository": {
     "type": "git",
