@@ -6,6 +6,9 @@
     "type": "git",
     "url": "git+https://github.com/fabiandev/node-require-fallback.git"
   },
+  "engines": {
+    "node": ">= 6"
+  },
   "main": "index.js",
   "keywords": [
     "node",
