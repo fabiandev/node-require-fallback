@@ -1,6 +1,6 @@
-function exists(nodeModule) {
+function exists(m) {
   try {
-    require.resolve(nodeModule)
+    require.resolve(m)
   } catch (e) {
     return false;
   }
@@ -8,17 +8,11 @@ function exists(nodeModule) {
   return true;
 }
 
-function requireIfExists(nodeModule, fallbackModule1, fallbackModule2) {
-  if (exists(nodeModule)) {
-    return require(nodeModule)
-  }
-
-  if (exists(fallbackModule1)) {
-    return require(fallbackModule1);
-  }
-
-  if (exists(fallbackModule2)) {
-    return require(fallbackModule2);
+function requireIfExists(...modules) {
+  for (m of modules) {
+    if (exists(m)) {
+      return require(m);
+    }
   }
 
   return null;
